@@ -1,14 +1,46 @@
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<title>MyWay | Coming Soon</title>
 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald' rel='stylesheet' type='text/css'>
 		<style type="text/css">
 			body {
-				background-color:#669ecc;
+				background-color:#fff;
 			}
 			img {
 				border:none;
+			}
+			.col_25 {
+				width:23%;
+				margin:0 2% 0 0;
+				float:left;
+			}
+			.col_50 {
+			    width:48%;
+			    margin:0 2% 0 0;
+			    float:left;
+			}
+			.col_33 {
+			    width:31%;
+			    margin:0 2% 0 0;
+			    float:left;
+			}
+			.col_66 {
+			    width:64%;
+			    margin:0 2% 0 0;
+			    float:left;
+			}
+			.col_100 {
+			    width:100%;
+			}
+			.img {
+			    max-width:100%;
+			}
+			.clear {
+			    clear:both;
 			}
 			.main-wrapper {
 				max-width:960;
@@ -20,7 +52,7 @@
 			}
 			.coming-soon {
 				text-align:center;
-				color:#fff;
+				color:#333;
 			}
 			.coming-soon h1 {
 				font-family: 'Open Sans Condensed', sans-serif;
@@ -36,13 +68,47 @@
 				margin-top:10px;
 				margin-bottom:0px;
 			}
+			.buttons {
+				margin-top:60px;
+			}
+			
+			.logo {
+				background-color:#fff;
+				max-width:225px;
+			}
+			.footer {
+				padding:30px 0 20px;
+				text-align:center;
+				color:#666;
+			}
+			
+			@media only screen and (max-width:768px) { /* Tablet */
+			  .col_25,
+			  .col_33,
+			  .col_66,
+			  .col_50 ,
+			  .col_75  {
+			    width:98%;
+			    float:none;
+			  } 
+			  
+			  label {
+			    padding:10px 0 8px 0;
+			  }
+			  .coming-soon h1, .coming-soon h2 {
+			    	font-size:48px;
+			    }
+			    .col_50 {
+			    	text-align:center;
+			    }
+			}
 		</style>
 	</head>
 
 	<body>
 		<div class="main-wrapper">
 			<div class="banner">
-				<img src="images/myway_banner-new.jpg" alt="myway banner" style="width:640px;" />
+				<img src="images/myway_banner-new.jpg" alt="myway banner" class="img" />
 			</div>
 
 			<div class="coming-soon">
@@ -51,7 +117,39 @@
 				<h2>Coming Soon</h2>
 			</div>
 
-			<div class="buttons"></div>
+			<div class="buttons">
+				<div class="col_50" style="text-align:center;">
+					<img src="images/apps_logo_flat_print_medium.png" alt="google apps logo" class="logo">
+				</div>
+				<div class="col_50" style="text-align:center;">
+					<img src="images/CareerCruisingLogoMedium.jpg" alt="Career Cruising logo" class="logo">
+				</div>
+				<div class="clear"></div>
+				<div class="col_50" style="text-align:center;">
+					<img src="images/desire2learn.png" alt="Career Cruising logo" class="logo">
+				</div>
+				<div class="col_50" style="text-align:center;">
+					<img src="images/dreambox-logo.png" alt="dreambox logo" class="logo">
+				</div>
+				<div class="clear"></div>
+<!--
+				<div class="col_50">
+					<img src="images/homework_help.png" alt="home work help logo">
+				</div>
+				<div class="col_50">
+					<img src="images/waterworks.jpg" alt="waterworks logo">
+				</div>
+-->
+			</div>
+
+			<div class="clear"></div>
+
+			<div class="col_100">
+				<div class="footer">
+					Google Apps, Career Cruising, Desire2Learn and Dream Box logos are registered trademark of
+					respective company/organization
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
